@@ -1,0 +1,80 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+.rstudio
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Output directories
+outputs/
+log/
+
+# Data
+data/raw_fastq/*.fastq.gz
+data/ref/*/*.fa
+data/ref/*/*.fasta
+
+# Temporary files
+*.tmp
+*.temp
+*.partial
+
+# Bismark output
+*.bam.bai
+*_bismark_bt2_*
+*_val_*.fq.gz
+*_clip.*.fq.gz
+*_single.*.fq.gz
+
+# FastQC output
+*_fastqc.html
+*_fastqc.zip
+fastqc/
+
+# MultiQC
+multiqc_report.html
+multiqc_data/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.conda/
+*.conda
+
+# README
+README.md.bak

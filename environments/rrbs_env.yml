@@ -1,0 +1,33 @@
+name: methylation_rrbs
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.10
+
+  # R
+  - r-base=4.3
+  - r-essentials
+
+  # Core tools
+  - bismark
+  - bowtie2
+  - samtools
+  - htslib
+
+  # Quality control
+  - fastqc
+  - multiqc
+  - trim-galore  # RRBS-specific
+
+  # Additional tools
+  - perl
+  - java-openjdk
+
+  # Python dependencies
+  - pip
+  - pyyaml>=6.0
+  - click>=8.0

@@ -1,0 +1,52 @@
+# WGBS Analysis Configuration
+
+# Analysis type
+analysis_type: "WGBS"
+
+# Genome
+genome: "hg38"
+
+# Directories
+ref_dir: "data/ref"
+output_dir: "outputs"
+log_dir: "log"
+
+# Processing parameters
+threads: 8
+min_read_length: 75
+
+# Quality control
+trim_sliding_window: "4:15"
+
+# Coverage thresholds
+min_coverage: 10
+max_coverage_percentile: 99.9
+
+# Methylation analysis
+read_context: "CpG"
+diff_meth_threshold: 25
+diff_qvalue_threshold: 0.01
+
+# Deduplication (WGBS-specific)
+need_deduplication: true
+
+# Bismark parameters
+bismark_parallel: 8
+bismark_buffer_size: "20G"
+
+# Methylation extraction
+extract_comprehensive: true
+extract_bedgraph: true
+extract_cytosine_report: true
+
+# Trim Galore (not used for WGBS, use Trimmomatic instead)
+use_trim_galore: false
+trim_galore_rrbs: false
+
+# Output directories (auto-generated)
+output_dirs:
+  clip_reads: "outputs/01_clip_reads"
+  meth_bam: "outputs/02_meth_bam"
+  dedu_meth: "outputs/03_dedu_meth"
+  methinfo: "outputs/04_methinfo"
+  results: "outputs/05_results"

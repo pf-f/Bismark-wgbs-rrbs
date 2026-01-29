@@ -1,0 +1,16 @@
+# Python dependencies for methylation analysis toolkit
+# Used primarily for configuration management and utility functions
+
+# Configuration management
+pyyaml>=6.0
+
+# Command line interface (optional, main script uses R optparse)
+click>=8.0
+
+# Logging (optional, can use Python logging)
+# No external logging packages required
+
+# Development dependencies (install with: pip install -e ".[dev]")
+# pytest>=7.0
+# black>=22.0
+# flake8>=4.0
